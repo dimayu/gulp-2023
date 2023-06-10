@@ -1,0 +1,20 @@
+@use 'sass:math';
+
+/** Подключение шрифтов локально из папки "./src/fonts" */
+@import 'config/fonts';
+
+/** Подключение переменных */
+@import 'config/vars';
+
+/** Обнуление */
+@import 'config/reset';
+
+/** Подключение custom scrollbar для всего сайта */
+@import 'config/scrollbar';
+
+/** БЕМ блоки используемые во всё проекте */
+@import 'config/common';
+
+/** Подключение стилей отдельных блоков и секций */
+@import 'components/header';
+@import 'components/footer';
