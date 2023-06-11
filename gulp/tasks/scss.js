@@ -19,7 +19,7 @@ const scss = () => {
       .src(filePaths.src.scss, { sourcemaps: isDev })
       .pipe(plugins.handleError('SCSS'))
       .pipe(sass({ outputStyle: 'expanded' }))
-      .pipe(plugins.replace(/@img\//g, '../images/'))
+      .pipe(plugins.replace(/@img\//g, '../img/'))
       .pipe(plugins.if(isBuild, groupCssMediaQueries()))
       .pipe(
         plugins.if(

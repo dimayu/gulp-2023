@@ -39,8 +39,8 @@
   формат;
 ```
     <picture>
-      <source srcset="images/img.webp" type="image/webp">
-      <img src="images/img.jpg" alt="" alt="" width="" height="">
+      <source srcset="img/img.webp" type="image/webp">
+      <img src="img/img.jpg" alt="" alt="" width="" height="">
     </picture>
 ```
 - копирует папку `/static` с содержимым в финальную сборку. То есть любые файлы можно поместить в эту папку и она будет
@@ -48,7 +48,7 @@
 - отдельной командой `$ npm run svgSprive` cоздает "svg cпрайты";
 ```
       <svg>
-        <use xlink:href="images/icons/icons.svg#icon"></use>
+        <use xlink:href="img/svgIcons/sprite.svg#icon"></use>
       </svg>
 ```
 - перед каждым запуском сборщика чистит папку с финальным проектом, чтобы не собирать мусор;
@@ -81,5 +81,3 @@ gh-pages:
 ```json
 "homepage": "https://{UserName}.github.io/{NameRepo}",
 ```
-
-По любым вопросам касающихся сборки пишите мне в [Telegram](https://t.me/StarkElessar).

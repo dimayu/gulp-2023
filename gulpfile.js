@@ -15,6 +15,7 @@ import { js } from './gulp/tasks/js.js';
 import { images } from './gulp/tasks/images.js';
 import { otfToTtf, ttfToWoff, fontStyle } from './gulp/tasks/fonts.js';
 import { createSvgSprite } from './gulp/tasks/createSvgSprite.js';
+import { favicon } from './gulp/tasks/favicons.js';
 import { zip } from './gulp/tasks/zip.js';
 import { ftp } from './gulp/tasks/ftp.js';
 
@@ -39,6 +40,7 @@ function watcher() {
   gulp.watch(filePaths.watch.scss, scss);
   gulp.watch(filePaths.watch.js, js);
   gulp.watch(filePaths.watch.images, images);
+  gulp.watch(filePaths.watch.favicons, favicon);
 }
 
 // Последовательная обработка шрифтов
@@ -47,7 +49,7 @@ const fonts = gulp.series(otfToTtf, ttfToWoff, fontStyle);
 /**
  * Параллельные задачи в режиме разработки
  */
-const devTasks = gulp.parallel(copy, copyRootFiles, html, scss, js, images, createSvgSprite);
+const devTasks = gulp.parallel(copy, copyRootFiles, html, scss, js, images, createSvgSprite, favicon);
 
 /**
  * Основные задачи

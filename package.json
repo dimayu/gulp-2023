@@ -1,6 +1,6 @@
 {
-  "name": "gulp-2022",
-  "version": "1.6.1",
+  "name": "gulp-2023",
+  "version": "1.0.0",
   "description": "Сборка Gulp+Webpack+Babel",
   "main": "gulpfile.js",
   "type": "module",
@@ -15,8 +15,7 @@
     "predeploy": "npm run build"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/StarkElessar/gulp-2022.git"
+    "type": "git"
   },
   "keywords": [
     "gulp",
@@ -42,6 +41,7 @@
     "gulp-autoprefixer": "^8.0.0",
     "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
+    "gulp-favicons": "^4.0.0",
     "gulp-file-include": "^2.3.0",
     "gulp-fonter-fix": "^0.0.1",
     "gulp-ftp": "^1.1.0",
@@ -71,7 +71,5 @@
     "webp-converter": "*2.2.3",
     "webpack": "^5.65.0",
     "webpack-stream": "^7.0.0"
-  },
-  "dependencies": {
   }
 }

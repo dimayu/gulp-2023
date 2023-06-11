@@ -12,9 +12,9 @@ const createSvgSprite = () => {
       svgSprite({
         mode: {
           stack: {
-            sprite: `../icons/icons.svg`,
+            sprite: `../sprite/sprite.svg`,
             /** Создавать страницу с перечнем иконок */
-            example: true,
+            example: false,
           },
         },
       })

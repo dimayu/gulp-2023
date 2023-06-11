@@ -12,7 +12,7 @@ const html = () => {
     .src(filePaths.src.html)
     .pipe(plugins.handleError('HTML'))
     .pipe(fileInclude())
-    .pipe(plugins.replace(/@img\//g, 'images/'))
+    .pipe(plugins.replace(/@img\//g, 'img/'))
     .pipe(plugins.if(app.isBuild, webpHtml()))
     .pipe(
       htmlMin({
