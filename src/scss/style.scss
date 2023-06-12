@@ -1,17 +1,17 @@
 /** Подключение шрифтов локально из папки "./src/fonts" */
-@import 'config/fonts';
+@import url('config/fonts.scss');
 
 /** Подключение переменных */
-@import 'config/vars';
+@import url('config/vars.scss');
 
 /** Обнуление */
-@import 'config/reset';
+@import url('config/reset.scss');
 
 /** Подключение custom scrollbar для всего сайта */
-@import 'config/scrollbar';
+@import url('config/scrollbar.scss');
 
 /** БЕМ блоки используемые во всё проекте */
-@import 'config/common';
+@import url('config/common.scss');
 
 /** Подключение стилей отдельных блоков и секций */
-@import '../components/components';
+@import url('../components/components.scss');
